@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UG CloudWeld</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="logo">
+        <span class="logo-mark">&#9729;</span>
+        <span class="logo-text">UG CloudWeld</span>
+      </a>
+      <nav class="main-nav" id="main-nav">
+        <a href="#workspace">Workspace</a>
+        <a href="#projects">Projects</a>
+        <a href="#activity">Activity</a>
+        <a href="#footer">Community</a>
+      </nav>
+      <a href="#workspace" class="btn btn-primary header-cta">Start Building</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-badge">Community &middot; Cloud &middot; AI</div>
+      <h1 class="hero-title">UG CloudWeld</h1>
+      <p class="hero-tagline">Build, learn and ship cloud-powered projects — together.</p>
+      <p class="hero-description">
+        UG CloudWeld is a community workspace for builders who want to experiment with cloud
+        technology, grow through hands-on learning, and ship real projects alongside others
+        who care about the craft.
+      </p>
+      <div class="hero-actions">
+        <button class="btn btn-primary btn-lg" id="hero-cta">Join the Build</button>
+        <a href="#workspace" class="btn btn-outline btn-lg">Explore Workspace</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLOUDWELD WORKSPACE -->
+  <section class="workspace" id="workspace">
+    <div class="container">
+      <h2 class="section-title">The CloudWeld Workspace</h2>
+      <p class="section-subtitle">Three spaces. One community.</p>
+      <div class="workspace-grid">
+
+        <div class="workspace-card" data-area="build">
+          <div class="workspace-icon" aria-hidden="true">&#9654;</div>
+          <h3 class="workspace-card-title">Build</h3>
+          <ul class="workspace-list">
+            <li>Cloud projects</li>
+            <li>AI experiments</li>
+            <li>Developer tools</li>
+          </ul>
+          <p class="workspace-card-desc">Spin up ideas, prototype fast, and ship things that run on real infrastructure.</p>
+        </div>
+
+        <div class="workspace-card featured-card" data-area="learn">
+          <div class="workspace-icon" aria-hidden="true">&#9675;</div>
+          <h3 class="workspace-card-title">Learn</h3>
+          <ul class="workspace-list">
+            <li>Workshops</li>
+            <li>Cloud concepts</li>
+            <li>Hands-on learning</li>
+          </ul>
+          <p class="workspace-card-desc">Structured paths and open sessions to level up your cloud and AI skills.</p>
+        </div>
+
+        <div class="workspace-card" data-area="connect">
+          <div class="workspace-icon" aria-hidden="true">&#9632;</div>
+          <h3 class="workspace-card-title">Connect</h3>
+          <ul class="workspace-list">
+            <li>Builders</li>
+            <li>Community</li>
+            <li>Events</li>
+          </ul>
+          <p class="workspace-card-desc">Meet the people behind the projects. Share ideas, get feedback, grow together.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED PROJECTS -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <h2 class="section-title">Featured Projects</h2>
+      <p class="section-subtitle">What builders are shipping.</p>
+      <div class="projects-grid">
+
+        <article class="project-card" tabindex="0">
+          <div class="project-card-header">
+            <span class="project-tag">Cloud</span>
+            <span class="project-status status-live">Live</span>
+          </div>
+          <h3 class="project-card-title">Serverless File Vault</h3>
+          <p class="project-card-desc">A minimal file storage tool built with serverless functions and object storage. Deploy in minutes.</p>
+          <div class="project-card-footer">
+            <span class="project-author">by Arun K.</span>
+            <span class="project-stack">Lambda &middot; S3</span>
+          </div>
+        </article>
+
+        <article class="project-card" tabindex="0">
+          <div class="project-card-header">
+            <span class="project-tag">AI</span>
+            <span class="project-status status-wip">In Progress</span>
+          </div>
+          <h3 class="project-card-title">Doc Summariser</h3>
+          <p class="project-card-desc">Upload a PDF, get a clean summary. Experimenting with foundation models and document parsing.</p>
+          <div class="project-card-footer">
+            <span class="project-author">by Priya R.</span>
+            <span class="project-stack">Bedrock &middot; Python</span>
+          </div>
+        </article>
+
+        <article class="project-card" tabindex="0">
+          <div class="project-card-header">
+            <span class="project-tag">DevTools</span>
+            <span class="project-status status-live">Live</span>
+          </div>
+          <h3 class="project-card-title">IaC Starter Kit</h3>
+          <p class="project-card-desc">A clean CDK template for bootstrapping cloud projects with sensible defaults and CI/CD baked in.</p>
+          <div class="project-card-footer">
+            <span class="project-author">by Vijay S.</span>
+            <span class="project-stack">CDK &middot; TypeScript</span>
+          </div>
+        </article>
+
+        <article class="project-card" tabindex="0">
+          <div class="project-card-header">
+            <span class="project-tag">Cloud</span>
+            <span class="project-status status-wip">In Progress</span>
+          </div>
+          <h3 class="project-card-title">Cost Radar</h3>
+          <p class="project-card-desc">A lightweight dashboard that surfaces cloud spend anomalies using billing APIs and simple alerting.</p>
+          <div class="project-card-footer">
+            <span class="project-author">by Meena T.</span>
+            <span class="project-stack">Cost Explorer &middot; Node</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ACTIVITY -->
+  <section class="activity" id="activity">
+    <div class="container">
+      <h2 class="section-title">Community Activity</h2>
+      <p class="section-subtitle">What&apos;s happening in the workspace.</p>
+      <div class="activity-panel">
+        <ul class="activity-feed" id="activity-feed">
+          <li class="activity-item">
+            <span class="activity-dot dot-build"></span>
+            <span class="activity-text"><strong>Arun K.</strong> pushed a new release of Serverless File Vault</span>
+            <span class="activity-time">2 hours ago</span>
+          </li>
+          <li class="activity-item">
+            <span class="activity-dot dot-learn"></span>
+            <span class="activity-text"><strong>Workshop:</strong> Getting started with Amazon Bedrock — 12 builders joined</span>
+            <span class="activity-time">Yesterday</span>
+          </li>
+          <li class="activity-item">
+            <span class="activity-dot dot-connect"></span>
+            <span class="activity-text"><strong>Priya R.</strong> shared a write-up on prompt engineering patterns</span>
+            <span class="activity-time">2 days ago</span>
+          </li>
+          <li class="activity-item">
+            <span class="activity-dot dot-build"></span>
+            <span class="activity-text"><strong>Vijay S.</strong> open-sourced the IaC Starter Kit</span>
+            <span class="activity-time">3 days ago</span>
+          </li>
+          <li class="activity-item">
+            <span class="activity-dot dot-connect"></span>
+            <span class="activity-text"><strong>Community call:</strong> Cloud cost optimisation — recording available</span>
+            <span class="activity-time">1 week ago</span>
+          </li>
+        </ul>
+        <div class="activity-status" id="activity-status">
+          <span class="status-indicator"></span>
+          <span id="status-message">Workspace active</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" id="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-mark" aria-hidden="true">&#9729;</span>
+        <span class="logo-text">UG CloudWeld</span>
+      </div>
+      <p class="footer-statement">A place where builders learn, experiment and ship cloud-powered projects together.</p>
+      <p class="footer-note">Community-built &middot; Not affiliated with AWS</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
