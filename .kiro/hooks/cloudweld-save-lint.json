@@ -1,0 +1,14 @@
+{
+  "version": "v1",
+  "hooks": [
+    {
+      "name": "CloudWeld File Save Check",
+      "trigger": "PostFileSave",
+      "matcher": "\\.(html|css|js)$",
+      "action": {
+        "type": "agent",
+        "prompt": "A file was just saved in UG CloudWeld. Quickly verify:\n1. The saved file is one of the three allowed files (index.html, style.css, script.js).\n2. No hardcoded hex/rgb colour values were introduced in HTML or JS — colours must use CSS variables.\n3. No new files or folders were created outside .kiro/.\nIf any issue is found, report it briefly. Otherwise stay silent."
+      }
+    }
+  ]
+}
