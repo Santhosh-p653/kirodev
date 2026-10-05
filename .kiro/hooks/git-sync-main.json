@@ -1,0 +1,15 @@
+{
+  "version": "v1",
+  "hooks": [
+    {
+      "name": "Git Sync — Fetch & Merge into main",
+      "trigger": "SessionStart",
+      "description": "At the start of every session, fetch from origin, fast-forward merge main, and prune deleted remote branches so the local repo stays clean with only main.",
+      "action": {
+        "type": "command",
+        "command": "cd /d \"e:\\aws\\kirodev\" && git fetch origin && git checkout main && git merge --ff-only origin/main && git remote prune origin",
+        "timeout": 30
+      }
+    }
+  ]
+}
